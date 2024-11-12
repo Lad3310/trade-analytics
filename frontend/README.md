@@ -1,8 +1,44 @@
-# React + Vite
+# Trade Analytics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for analyzing trading data files. Built with React, Vite, Tailwind CSS, and Supabase.
 
-Currently, two official plugins are available:
+## Features
+- Upload and process XML trade files
+- Real-time file processing status
+- Analytics dashboard with file statistics
+- File type breakdown and success rates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React 18
+- Vite
+- Tailwind CSS
+- Supabase
+- React Router DOM
+
+## Setup
+1. Clone the repository
+2. Navigate to the frontend directory:
+   ```
+   cd trade-analytics/frontend
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Create a `.env` file with:
+   ```
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+## Development
+Run the development server:
+yarn dev
+
+## Production Build
+Create a production build:
+yarn build
+
+Preview the production build:
+yarn preview
+
