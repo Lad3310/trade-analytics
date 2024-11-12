@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../config/supabase';
 import FileUpload from './FileUpload';
 import { TrashIcon } from '@heroicons/react/24/outline';
+import FileDetailsModal from './FileDetailsModal';
 
 export default function Files() {
   const [files, setFiles] = useState([]);
@@ -160,6 +161,13 @@ export default function Files() {
           </>
         )}
       </div>
+
+      {selectedFile && (
+        <FileDetailsModal
+          file={selectedFile}
+          onClose={() => setSelectedFile(null)}
+        />
+      )}
     </div>
   );
 }
